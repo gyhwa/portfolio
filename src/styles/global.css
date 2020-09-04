@@ -1,0 +1,52 @@
+h3 {
+  color: #ee6f57;
+}
+
+
+/* Index */
+.title {
+  padding: 10rem 10rem 10rem;
+  background-color: #f6f5f5;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* MDX extra */
+.video {
+  width: 20%;
+}
+
+/* Header */
+.header a {
+  color: #f6f5f5;
+}
+
+.header a:hover {
+  color: #ee6f57;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #00334e;
+  margin-bottom: 0px;
+}
+
+/* Footer */
+.footer a {
+  color: #808080;
+}
+
+.footer a:hover {
+  color: #ee6f57;
+  text-decoration: none;
+}
+
+.footer {
+  position:fixed;
+  bottom: 0px;
+  padding-top: 1rem;
+  width: 100%;
+  line-height: 1rem;
+  /* background-color: #C0C0C0; */
+}
