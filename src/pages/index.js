@@ -23,16 +23,18 @@ export default function Home() {
   return(
   <Layout>
     <Container fluid className="light-grey">
-      <Row>
-        <Col>
-        <div className="hero">
+      <div className="hero">
+        <Row>
+          <Col>
+
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <h1> The name is Gina </h1>
             <h3> Forever Student, Marketer, and more </h3>
           </Fade>
-        </div>
-        </Col>
-      </Row>
+
+          </Col>
+        </Row>
+      </div>
     </Container>
     <Project />
 

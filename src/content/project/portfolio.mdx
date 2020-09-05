@@ -1,0 +1,68 @@
+---
+title: "Portfolio"
+date: "2020-09-05"
+featuredImage: ./images/portfolio.jpg
+summary: "Create a portfolio and learn Gatsby. Two birds one bagel."
+tag: ["code","all"]
+---
+import React from "React"
+import {Link} from "gatsby"
+import { Container, Row, Col } from 'react-bootstrap';
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      ## Motivation
+      I have been creating a few animations and am starting to learn about web development. There wasn't a centralized place to show off all my work. In addition, if I am to use it to show off my work, I can use it to place my entire CV and background to show off to others.
+     </Col>
+      </Row>
+  </div>
+</Container>
+
+<Container fluid className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      ## Process
+      ### Research
+      I looked into popular ways that developers are creating static sites while using ReactJS. Time and time again Gatsby kept popping up as a recommendation and seemed to be a perfect fit for what I wanted.
+
+      I looked through the <Link to="https://www.gatsbyjs.com/tutorial/">step-by-step tutorial</Link> for Gatsby to get my feet wet. From there, there was a lot of Google-ing and drawing from experiences of other languages to fill in any missing gaps.
+
+      In terms of styling the page, Bootstrap was the ideal choice, as I used it previously with the <Link to="/project/goodmark">Goodmark</Link> project.
+
+      ### Lessons
+      In working on this porfolio, I learned about Gatsby, GraphQL, more JavaScript and more about state in React.
+      ### Tools
+
+      * <Link to="https://www.gatsbyjs.org/">Gatsby</Link> - Static Site Generator
+      * <Link to="https://graphql.org/">GraphQL</Link> - Query language for APIs
+      * <Link to="https://es.reactjs.org/">React</Link> - Front-End JavaScript library
+      * <Link to="https://react-bootstrap.github.io/">Bootstrap React</Link> - Front-End UI library
+
+     </Col>
+      </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      ## Iterations
+
+      ### Changes Made Over Time
+      Initially, I overcomplicated the website by having separate pages for both art projects and code projects. I moved them over to the front index. In order to have the same function of having separate pages, I added a button group to filter based on project tags.
+
+      Another design choice that was changed, was initially the CV was below the hero container instead of the projects. This created an extremely boring front page as it was quite a bit of text.
+
+      ### To Do
+
+      * Update the CV
+      * Separate the CV into components for clean organization
+      * Font choices
+     </Col>
+    </Row>
+  </div>
+</Container>

@@ -6,11 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-      title: `Title from siteMetadata`,
-      titleTemplate: "%s · The Real Hero",
+      title: `Gina Hwang`,
+      titleTemplate: "%s · Portfolio",
       description:
-      "Hogwarts Potions master, Head of Slytherin house and former Death Eater.",
-      url: "https://www.doe.com", // No trailing slash allowed!
+      "Forever a student. Marketer. Artist.",
+      url: "https://gyhwa.github.io/portfolio/", // No trailing slash allowed!
       image: "", // Path to your image you placed in the 'static' folder
       twitterUsername: "@occlumency",
     },

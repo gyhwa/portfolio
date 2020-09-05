@@ -13,7 +13,7 @@ export default function PageTemplate({ data: { mdx } }) {
     <Layout>
     <Container fluid>
       <Row>
-      <div className="mt-4 pad">
+      <div className="pad">
         <h1>{mdx.frontmatter.title}</h1>
         </div>
       </Row>

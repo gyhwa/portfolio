@@ -1,20 +1,28 @@
 import React from "react";
 import { Link } from "gatsby";
-import { heroData } from '../../mock/data';
-import { Container, Row } from 'react-bootstrap';
+import { footerData } from '../../mock/data';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Footer() {
-  const links = heroData.links;
-
+  const socials = footerData.socials;
+  const year = new Date().getFullYear();
   return (
        <Container fluid className="footer">
         <Row>
-          <div className="col-12 col-md-8">
-            <h6> <Link to="/">{heroData.title} </Link></h6>
-          </div>
-          <div className="col-12 col-md-4">
-            <p> I live in the footer </p>
-          </div>
+          <Col>
+            <h6> {footerData.title} ©{year}</h6>
+          </Col>
+          <Col md="auto">
+          <ul className="list-unstyled list-inline text-center">
+          {socials.map(social => (
+            <li className="list-inline-item">
+               <Link to={social.link}>
+                {social.name}
+               </Link>
+            </li>
+          ))}
+          </ul>
+          </Col>
         </Row>
       </Container>
   )

@@ -3,23 +3,112 @@ title: "Bookmark Holder"
 date: "2020-09-03"
 featuredImage: ./images/goodmark.jpg
 summary: "Have multiple devices. Find a link on one device. Must have link everywhere."
+tag: ["code","all"]
 ---
-
 import React from "React"
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
-<Container>
-  <Row>
-    <div className="mt-4">
-    ## Problem Statement
-    <p> Have multiple devices. Find a link on one device. Must have link everywhere.
-    </p>
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col>
+      ## Research
+      ### The Challenge
+      When trying to save a website cross-device, current methods are clunky.
 
-    <p>
-    Github link:
-      </p>
+      ### The Goal
+      A site to store all your bookmarks on a single page that can be accessible anywhere.
 
-    </div>
+      The high level goals were to:
+        * Make it fast and easy to used
+        * Create an organized view
+        * Allow for personal storage of bookmarks per user
 
-  </Row>
+
+
+      ### The User
+      The main user audience for this site was myself, which made insight gathering easy.
+
+
+      ### "Competitor" Insights
+      <div className="markdown">
+        | Product / Feature     	| Cross-Device              	| Categories 	| Single Page View 	| Notes/Description            	|
+        |-----------------------	|---------------------------	|------------	|------------------	|------------------------------	|
+        | "Synced" Bookmark Bar 	| Depends on synced account 	| Yes        	| No               	| No                           	|
+        | Pinterest             	| Yes                       	| Yes        	| Images Only      	| Yes                          	|
+        | Facebook Messenger    	| Yes                       	| No         	| Yes              	| Automated (Meta Description) 	|
+      </div>
+      <br />
+
+      ### End Product
+
+      https://goodmark.herokuapp.com/
+     </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid  className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      ## Features
+      ### MVP Features
+      * Add links with a title and notes
+      * See collection based on user
+        * Authentication and session-based users
+      * Group links based on a theme or collection
+
+
+      ### MAP Features
+      * User email verification
+      * User account settings
+
+
+      ### Nice to Have Features
+      * Add images
+     </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      ## Technology Used
+      Node.js, MongoDB (mongoose) and EJS.
+
+      **Notable Packages:**
+        * Passport for user authentication
+     </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      ## To Do
+      * User account pages
+      * Clean up the backend code to make more sense
+      * Re-create the project in React to make a single page application
+     </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      ## Links
+      ### Github
+      https://github.com/gyhwa/goodmark
+      ### Heroku App
+      https://goodmark.herokuapp.com/
+     </Col>
+    </Row>
+  </div>
 </Container>
