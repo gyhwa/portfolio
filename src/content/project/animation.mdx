@@ -1,24 +1,165 @@
 ---
 title: "Open Source Art Animation"
-date: "2020-09-03"
+date: "2020-08-05"
 featuredImage: ./images/gulfstream.jpg
+summary: "Animating great works of art."
 ---
 import React from "React"
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
-<Container>
-  <Row>
-    <div className="mt-4">
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      "Motion is just more interesting." - Gina Hwang
 
-    This is currently a mess but I will clean it up.
+      While I would love to one day even get close to the skills of the world greatest painters and artist, that likely will not happen unless I put more hours than I currently have. So instead, I wanted to learn more about these artists and use their work to create an engaging animated view. Each animation is in a seemless loop.
+      </Col>
+    </Row>
+  </div>
+</Container>
 
-    ## Motivation
 
-    <iframe width="560" height="315" src={'/videos/gulfstream.mp4'} frameborder="0" allowfullscreen></iframe>
 
-    <img width="560" height="315" src={'/images/gulfstream.jpg'} alt="original" />
+<Container fluid className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+    ## Tools & Methods
 
-    </div>
 
+    The tools:
+    * Adobe Photoshop
+    * Adobe Illustrator
+
+
+    Multiple art museums are digitally providing works in their gallery that are public domain and free of other known restrictions. The main galleries used in this project are the following:
+
+    * The Met Museum: https://www.metmuseum.org/art/collection/search#!?showOnly=highlights%7CwithImage%7CopenAccess&offset=260&pageSize=0&perPage=20&sortBy=Relevance&sortOrder=asc&searchField=All
+
+    * Art Institute - Chicago: https://www.artic.edu/collection?is_public_domain=1
+
+
+    The end result of each piece is reached differently, but to generalize the process.
+
+    1. Read up on the background to see if there are any insights in how the image should move. Plan the movements beforehand.
+    2. In Photoshop, duplicate the base layer and mask any pieces with unique movement within each individual layer. Use content aware fill on the original base image to make the background displaced by the movement.
+    3. Bring it into After Effects. Use puppet pins, displacement maps, and more to create the desired effect.
+      </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+    ## Works of Art
+      </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col>
+        ### The Gulf Stream - Winslow Homer
+
+        "The Gulf Stream is named after the strong Atlantic current that connected many of the locales where he liked to paint. Homer based this dramatic scene of imminent disaster on sketches and watercolors he had made during winter trips to the Bahamas in 1884 and 1898, after crossing the Gulf Stream several times. A man faces his demise on a dismasted, rudderless fishing boat, sustained by only a few stalks of sugarcane, while threatened by sharks and a distant waterspout. He is oblivious to the schooner on the left horizon, which Homer later added to the composition as a sign of hopeful rescue." - Met Museum <Link to="https://www.metmuseum.org/art/collection/search/11122">
+         (Source)
+        </Link>
+      </Col>
+    </Row>
+    <Row xs={1} md={2}>
+      <Col className="mb-4">
+        <img width="100%" src={'/images/gulfstream.jpg'} alt="original" />
+        Original
+      </Col>
+      <Col className="mb-4">
+        <video width="100%" height="100%" autoplay loop>
+          <source src={'/videos/gulfstream.mp4'} type="video/mp4" />
+        </video>
+        Animated
+      </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col>
+      ### Lacquer Paintings of Various Subjects: Butterflies - Shibata Zeshin
+
+      "The strong color effect seen in this album is achieved by using lacquer as a painting medium. Painting with lacquer on paper was one of the techniques Zeshin developed into his own style." - Met Museum <Link to="https://www.metmuseum.org/art/collection/search/57194">
+       (Source)
+      </Link>
+    </Col>
   </Row>
+  <Row xs={1} md={2}>
+    <Col className="mb-4">
+      <img width="100%" src={'/images/lacquerpaintingsofvarioussubjectsbutterflies.jpg'} alt="original" />
+      Original
+    </Col>
+    <Col className="mb-4">
+      <video width="100%" height="100%" autoplay loop>
+        <source src={'/videos/lacquerpaintingsofvarioussubjectsbutterflies.mp4'} type="video/mp4" />
+      </video>
+      Animated
+    </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+    <Col>
+      ### American Gothic - Grant Wood
+
+      "This familiar image was exhibited publicly for the first time at the Art Institute of Chicago, winning a three-hundred-dollar prize and instant fame for Grant Wood. The impetus for the painting came while Wood was visiting the small town of Eldon in his native Iowa." - Art Institue - Chicago <Link to="https://www.artic.edu/artworks/6565/american-gothic">
+       (Source)
+      </Link>
+    </Col>
+  </Row>
+  <Row xs={1} md={2}>
+    <Col className="mb-4">
+      <img width="100%" src={'/images/americangothic.jpg'} alt="original" />
+      Original
+    </Col>
+    <Col className="mb-4">
+      <video width="100%" height="100%" autoplay loop>
+        <source src={'/videos/americangothic.mp4'} type="video/mp4" />
+      </video>
+      Animated
+    </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+    <Col>
+      ### The Drinkers - Vincent van Gogh
+
+      "For this image, Van Gogh copied a wood engraving from Honoré Daumier’s Drinkers, a parody on the four ages of man. The exaggerated figure types capture Daumier’s characteristic humor and convey his sad message about the horrors of alcoholism. The greenish palette may well be an allusion to the notorious alcoholic drink absinthe." - Art Institue - Chicago <Link to="https://www.artic.edu/artworks/79349/the-drinkers">
+       (Source)
+      </Link>
+    </Col>
+  </Row>
+  <Row xs={1} md={2}>
+    <Col className="mb-4">
+      <img width="100%" src={'/images/drinkers.jpg'} alt="original" />
+      Original
+    </Col>
+    <Col className="mb-4">
+      <video width="100%" height="100%" autoplay loop>
+        <source src={'/videos/drinkers.mp4'} type="video/mp4" />
+      </video>
+      Animated
+    </Col>
+    </Row>
+  </div>
 </Container>

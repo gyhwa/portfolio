@@ -4,14 +4,6 @@ export const heroData = {
     {
       link: '/cv',
       name: 'CV'
-    },
-    {
-      link: '/project',
-      name: 'Projects'
-    },
-    {
-      link: '/about',
-      name: 'About'
-    },
+    }
   ]
 };

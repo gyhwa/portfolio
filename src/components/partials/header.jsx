@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { heroData } from '../mock/data';
+import { heroData } from '../../mock/data';
 import { Navbar, Nav } from 'react-bootstrap';
 
 export default function Header() {

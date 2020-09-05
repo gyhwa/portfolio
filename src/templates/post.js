@@ -11,17 +11,18 @@ const shortcodes = { Link } // Provide common components here
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
-    <Container>
+    <Container fluid>
       <Row>
-      <div className="mt-4">
+      <div className="mt-4 pad">
         <h1>{mdx.frontmatter.title}</h1>
         </div>
       </Row>
     </Container>
-
-      <MDXProvider components={shortcodes}>
-        <MDXRenderer>{mdx.body}</MDXRenderer>
-      </MDXProvider>
+      <div className="mb-4">
+        <MDXProvider components={shortcodes}>
+          <MDXRenderer>{mdx.body}</MDXRenderer>
+        </MDXProvider>
+      </div>
     </Layout>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { heroData } from '../mock/data';
+import { heroData } from '../../mock/data';
 import { Container, Row } from 'react-bootstrap';
 
 export default function Footer() {
