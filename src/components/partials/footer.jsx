@@ -10,7 +10,7 @@ export default function Footer() {
        <Container fluid className="footer">
         <Row>
           <Col>
-            <h6> {footerData.title} ©{year}</h6>
+            <p> {footerData.title} ©{year}</p>
           </Col>
           <Col md="auto">
           <ul className="list-unstyled list-inline text-center">

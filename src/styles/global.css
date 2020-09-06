@@ -2,10 +2,18 @@ h3 {
   color: #ee6f57;
 }
 
+h6 {
+  color: #ee6f57;
+  font-style: italic;
+}
 
 /* General Guidelines */
 .hero {
   padding: 10rem 10rem 10rem;
+}
+
+.large {
+  font-size: 10rem;
 }
 
 .pad {

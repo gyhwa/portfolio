@@ -52,7 +52,7 @@ class Project extends React.Component {
               <div className="pad">
                 <Row className="mb-4 mt-4">
                   <Col>
-                  <h1> Here is what I have been up to: </h1>
+                  <h1> Projects </h1>
                   </Col>
                   <Col md="auto">
                     <ButtonGroup aria-label="Basic example">
