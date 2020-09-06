@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { cvData } from '../mock/data';
 import { Container, Row, Col,Table  } from 'react-bootstrap';
 

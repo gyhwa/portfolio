@@ -72,3 +72,13 @@ h6 {
   background-color: #808080;
   color: #f6f5f5;
 }
+
+/* Portfolio */
+.portfolio a {
+  color: #f6f5f5;
+}
+
+.portfolio a:hover {
+  color: #ee6f57;
+  text-decoration: none;
+}

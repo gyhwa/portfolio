@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from "react"
 import Layout from '../components/layout';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Project from '../components/project';
 
