@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 import { Container, Row, Col, Card, ButtonGroup, Button } from 'react-bootstrap';
 
 
@@ -77,7 +77,9 @@ class Project extends React.Component {
                         <Card.Text>
                           {post.frontmatter.summary}
                         </Card.Text>
-                        <Button variant="primary" href={post.fields.slug}>Read More</Button>
+                        <Button variant="primary"><Link to={post.fields.slug} style={{ textDecoration: 'none' }, {color: "#f6f5f5"}}>
+                          Read More
+                          </Link></Button>
                       </Card.Body>
                     </Card>
                   </Col>

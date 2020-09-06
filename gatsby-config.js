@@ -25,9 +25,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     `gatsby-transformer-remark`
   ],
-  module.exports = {
-  pathPrefix: "/reponame",
-  }
+  pathPrefix: "/reponame"
 }
 
 
