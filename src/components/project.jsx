@@ -77,7 +77,7 @@ class Project extends React.Component {
                         <Card.Text>
                           {post.frontmatter.summary}
                         </Card.Text>
-                        <Button variant="primary" href={`./${post.fields.slug}`}>Read More</Button>
+                        <Button variant="primary" href={post.fields.slug}>Read More</Button>
                       </Card.Body>
                     </Card>
                   </Col>
