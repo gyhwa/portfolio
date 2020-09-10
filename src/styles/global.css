@@ -82,3 +82,14 @@ h6 {
   color: #ee6f57;
   text-decoration: none;
 }
+
+/* Media Rules */
+@media only screen and (max-width: 600px) {
+  .pad {
+    padding: 1rem 3rem 1rem;
+  }
+
+  .hero {
+    padding: 6rem 6rem 6rem;
+  }
+}

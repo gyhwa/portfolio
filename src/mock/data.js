@@ -4,6 +4,10 @@ export const heroData = {
     {
       link: '/cv',
       name: 'CV'
+    },
+    {
+      link: '/blog',
+      name: 'Blog'
     }
   ]
 };
