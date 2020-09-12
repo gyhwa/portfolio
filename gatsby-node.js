@@ -42,6 +42,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
     }
   `)
+
   if (result.errors) {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
   }
@@ -51,7 +52,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const postsPerPage = 2 // Change this to get more resutls per page.
 	const numPages = Math.ceil(blog.length / postsPerPage)
 
-  ///delte this if this does not work
+
   Array.from( {length: numPages} ).forEach( (_, i) => {
 		createPage({
 			path: i === 0 ? '/blog' : `/blog/${i + 1}`,
@@ -64,7 +65,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 			}
 		});
 	})
-
 
   posts.forEach(({ node }, index) => {
     createPage({

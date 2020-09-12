@@ -23,7 +23,18 @@ h6 {
 .light-grey {
   background-color: #f6f5f5;
 }
+/* Posts */
 
+.date-grey {
+  color: #808080;
+   font-style: italic;
+   font-size: 0.75rem;
+}
+
+.tag-grey {
+  color: #808080;
+   font-size: 0.75rem;
+}
 /* Markdown */
 
 .markdown tr:nth-child(even){background-color: #f2f2f2;}

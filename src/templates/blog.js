@@ -1,13 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Layout from '../components/Layout';
 import { Container, Row, Col } from 'react-bootstrap';
 import Pagination from '../components/pagination';
 
-const shortcodes = { Link } // Provide common components here
 export default function PageTemplate({ data,  pageContext: { numPages, currentPage }}) {
   return (
     <Layout>
@@ -28,7 +25,12 @@ export default function PageTemplate({ data,  pageContext: { numPages, currentPa
                  return (
                    <Col className="mb-2" ey={index}>
                          <h2><Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link></h2>
+                         <p className="date-grey">{edge.node.frontmatter.date} </p>
                          <p>{edge.node.frontmatter.summary} </p>
+                         <p className="tag-grey"> tags: &nbsp;
+                         {edge.node.frontmatter.tag.filter(tag => tag != "blog").map((tag) => {
+                           return( `${tag} `)
+                         })} </p>
                    </Col>
                  )
              })}
@@ -56,6 +58,7 @@ export const pageQuery = graphql`
             title
             summary
             tag
+            date
           }
           fields {
 				    slug
