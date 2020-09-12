@@ -1,4 +1,5 @@
 const { createFilePath } = require("gatsby-source-filesystem")
+const { paginate } = require('gatsby-awesome-pagination')
 const path = require("path")
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -30,6 +31,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         edges {
           node {
             id
+            frontmatter {
+              tag
+            }
             fields {
               slug
             }
@@ -43,17 +47,31 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
   // Create blog post pages.
   const posts = result.data.allMdx.edges
-  // you'll call `createPage` for each result
+  const blog = result.data.allMdx.edges.filter(({ node: post}) => post.frontmatter.tag.includes("blog"))
+  const postsPerPage = 2 // Change this to get more resutls per page.
+	const numPages = Math.ceil(blog.length / postsPerPage)
+
+  ///delte this if this does not work
+  Array.from( {length: numPages} ).forEach( (_, i) => {
+		createPage({
+			path: i === 0 ? '/blog' : `/blog/${i + 1}`,
+			component: path.resolve('./src/templates/blog.js'),
+			context: {
+				limit: postsPerPage,
+				skip: i * postsPerPage,
+				numPages,
+				currentPage: i + 1
+			}
+		});
+	})
+
+
   posts.forEach(({ node }, index) => {
     createPage({
-      // This is the slug you created before
-      // (or `node.frontmatter.slug`)
       path: node.fields.slug,
-      // This component will wrap our MDX content
       component: path.resolve(`./src/templates/post.js`),
-      // You can use the values in this context in
-      // our page layout component
       context: { id: node.id },
     })
   })
+
 }
