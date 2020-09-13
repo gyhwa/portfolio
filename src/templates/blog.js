@@ -4,10 +4,12 @@ import { Link } from "gatsby"
 import Layout from '../components/Layout';
 import { Container, Row, Col } from 'react-bootstrap';
 import Pagination from '../components/pagination';
+import SEO from '../components/seo';
 
 export default function PageTemplate({ data,  pageContext: { numPages, currentPage }}) {
   return (
     <Layout>
+    <SEO title="Gina's Blog" description="Blog post about digital marketing and other items" />
     <Container fluid>
       <div className="pad">
         <Row>
@@ -28,7 +30,7 @@ export default function PageTemplate({ data,  pageContext: { numPages, currentPa
                          <p className="date-grey">{edge.node.frontmatter.date} </p>
                          <p>{edge.node.frontmatter.summary} </p>
                          <p className="tag-grey"> tags: &nbsp;
-                         {edge.node.frontmatter.tag.filter(tag => tag != "blog").map((tag) => {
+                         {edge.node.frontmatter.tag.filter(tag => tag !== "blog").map((tag) => {
                            return( `${tag} `)
                          })} </p>
                    </Col>

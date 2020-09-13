@@ -3,10 +3,12 @@ import Layout from '../components/layout';
 import { Container, Row, Col } from 'react-bootstrap';
 import JobHistory from '../components/jobhistory';
 import Skills from '../components/skills';
+import SEO from '../components/seo';
 
 export default function CV() {
   return(
   <Layout>
+    <SEO title="Gina's CV" description="Digital Marketing centered CV for Gina" />
     <Container fluid className="mb-4 mt-4">
       <Row>
         <Col>

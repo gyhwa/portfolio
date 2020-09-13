@@ -2,7 +2,6 @@ import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
 import { Container, Row, Col, Card, ButtonGroup, Button } from 'react-bootstrap';
 
-
 class Project extends React.Component {
   constructor(props) {
     super(props);

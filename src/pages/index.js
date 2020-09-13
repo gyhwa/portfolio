@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import { Container, Row, Col } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Project from '../components/project';
+import SEO from '../components/seo';
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
 
   return(
   <Layout>
+    <SEO />
     <Container fluid className="light-grey">
       <div className="hero">
         <Row>
