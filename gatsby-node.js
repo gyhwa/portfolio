@@ -49,7 +49,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create blog post pages.
   const posts = result.data.allMdx.edges
   const blog = result.data.allMdx.edges.filter(({ node: post}) => post.frontmatter.tag.includes("blog"))
-  const postsPerPage = 2 // Change this to get more resutls per page.
+  const postsPerPage = 6 // Change this to get more resutls per page.
 	const numPages = Math.ceil(blog.length / postsPerPage)
 
 

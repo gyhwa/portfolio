@@ -1,22 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
 import { Container, Row, Col, Card, ButtonGroup, Button } from 'react-bootstrap';
 
-class Project extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {filter: "all"};
-  }
+export default function Project() {
+  const [filter, setFilter] = useState("all")
 
-  handleClick = value => () =>{
-    this.setState(() => ({
-      filter: value
-    }));
+  function handleClick(event) {
+    setFilter(event.target.value);
   };
 
-
-  render() {
-    const filter = this.state.filter;
     return (
       <StaticQuery
         query={graphql`
@@ -55,9 +47,9 @@ class Project extends React.Component {
                   </Col>
                   <Col md="auto">
                     <ButtonGroup aria-label="Basic example">
-                      <Button variant="secondary" onClick={this.handleClick("all")}>All</Button>
-                      <Button variant="secondary" onClick={this.handleClick("art")}>Art</Button>
-                      <Button variant="secondary" onClick={this.handleClick("code")}>Code</Button>
+                      <Button variant="secondary" value="all" onClick={handleClick}>All</Button>
+                      <Button variant="secondary" value="art" onClick={handleClick}>Art</Button>
+                      <Button variant="secondary"  value="code" onClick={handleClick}>Code</Button>
                     </ButtonGroup>
                   </Col>
                 </Row>
@@ -93,7 +85,4 @@ class Project extends React.Component {
         )}
       />
     )
-  }
 }
-
-export default Project;

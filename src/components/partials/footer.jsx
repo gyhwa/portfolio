@@ -16,9 +16,9 @@ export default function Footer() {
           <ul className="list-unstyled list-inline text-center">
           {socials.map(social => (
             <li className="list-inline-item">
-               <Link to={social.link}>
+               <a href = {social.link}>
                 {social.name}
-               </Link>
+               </a>
             </li>
           ))}
           </ul>
