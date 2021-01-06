@@ -12,40 +12,57 @@ import { Container, Row, Col } from 'react-bootstrap';
   <div className="pad">
     <Row>
       <Col>
-      ## Research
-      ### The Challenge
+      <h2>Research</h2>
+      <h3>The Challenge</h3>
       When trying to save a website cross-device, current methods are clunky.
-
-      ### The Goal
+      <h3>The Goal</h3>
       A site to store all your bookmarks on a single page that can be accessible anywhere.
-
       The high level goals were to:
         * Make it fast and easy to used
         * Create an organized view
         * Allow for personal storage of bookmarks per user
-
-
-
-      ### The User
+      <h3>The User</h3>
       The main user audience for this site was myself, which made insight gathering easy.
-
-
-      ### "Competitor" Insights
+      <h3>"Competitor" Insights</h3>
       <div className="markdown">
-        | Product / Feature     	| Cross-Device              	| Categories 	| Single Page View 	| Notes/Description            	|
-        |-----------------------	|---------------------------	|------------	|------------------	|------------------------------	|
-        | "Synced" Bookmark Bar 	| Depends on synced account 	| Yes        	| No               	| No                           	|
-        | Pinterest             	| Yes                       	| Yes        	| Images Only      	| Yes                          	|
-        | Facebook Messenger    	| Yes                       	| No         	| Yes              	| Automated (Meta Description) 	|
+        <table>
+          <tr>
+            <th>Product / Feature</th>
+            <th>Cross-Device</th>
+            <th>Categories</th>
+            <th>Single Page View</th>
+            <th>Notes/Description</th>
+          </tr>
+            <tr>
+              <td>"Synced" Bookmark Bar on Browser</td>
+              <td>Depends on synced account</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Pinterest</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Images Only</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Facebook Messenger</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>Automated (Meta Description)</td>
+            </tr>
+        </table>
       </div>
       <br />
-      ### Sketch
+      <h3>Sketch</h3>
       <img width="20%" src={'../../images/goodmark/goodmarksketch.png'} alt="original" />
       <br />
       <br />
-      ### End Product
-
-      https://goodmark.herokuapp.com/
+      <h3>End Product</h3>
+      <a href="https://goodmark.herokuapp.com/">https://goodmark.herokuapp.com/</a>
      </Col>
     </Row>
   </div>
@@ -55,21 +72,25 @@ import { Container, Row, Col } from 'react-bootstrap';
   <div className="pad">
     <Row>
       <Col className="mt-4">
-      ## Features
-      ### MVP Features
-      * Add links with a title and notes
-      * See collection based on user
-        * Authentication and session-based users
-      * Group links based on a theme or collection
-
-
-      ### MAP Features
-      * User email verification
-      * User account settings
-
-
-      ### Nice to Have Features
-      * Add images
+      <h2>Features</h2>
+      <h3>MVP Features</h3>
+      <ul>
+      <li>Add links with a title and notes</li>
+      <li>See collection based on user</li>
+        <ul>
+        <li>Authentication and session-based users</li>
+        </ul>
+      <li>Group links based on a theme or collection</li>
+      </ul>
+      <h3>MAP Features</h3>
+      <ul>
+      <li>User email verification</li>
+      <li>User account settings</li>
+      </ul>
+      <h3>Nice to Have Features</h3>
+      <ul>
+      <li>Add images</li>
+      </ul>
      </Col>
     </Row>
   </div>
@@ -79,17 +100,18 @@ import { Container, Row, Col } from 'react-bootstrap';
   <div className="pad">
     <Row>
       <Col className="mt-4">
-      ## Technology Used
-      ### Tools
-      * <Link to="https://nodejs.org/en/">Node.js</Link> - Back-End JavaScript runtime
-      * <Link to="https://mongoosejs.com/">Mongoose</Link> - MongoDB Object modeling
-      * <Link to="https://ejs.co/">EJS</Link> - Embedded Javascript templating
-      * <Link to="https://react-bootstrap.github.io/">Bootstrap React</Link> - Front-End UI library
-
-
-
-      **Notable Packages:**
-        * Passport for user authentication
+      <h2>Technology Used</h2>
+      <h3>Tools</h3>
+      <ul>
+        <li><Link to="https://nodejs.org/en/">Node.js</Link> - Back-End JavaScript runtime</li>
+        <li><Link to="https://mongoosejs.com/">Mongoose</Link> - MongoDB Object modeling</li>
+        <li><Link to="https://ejs.co/">EJS</Link> - Embedded Javascript templating</li>
+        <li><Link to="https://react-bootstrap.github.io/">Bootstrap React</Link> - Front-End UI library</li>
+      </ul>
+      <p>Notable Packages:</p>
+      <ul>
+        <li>Passport for user authentication</li>
+      </ul>
      </Col>
     </Row>
   </div>
@@ -99,10 +121,12 @@ import { Container, Row, Col } from 'react-bootstrap';
   <div className="pad">
     <Row>
       <Col className="mt-4">
-      ## To Do
-      * User account pages
-      * Clean up the backend code to make more sense
-      * Re-create the project in React to make a single page application
+      <h2>To Do</h2>
+      <ul>
+        <li>User account pages</li>
+        <li>Clean up the backend code to make more sense</li>
+        <li>Re-create the project in React to make a single page application</li>
+      </ul>
      </Col>
     </Row>
   </div>
@@ -112,11 +136,11 @@ import { Container, Row, Col } from 'react-bootstrap';
   <div className="pad">
     <Row>
       <Col className="mt-4">
-      ## Links
-      ### Github
-      https://github.com/gyhwa/goodmark
-      ### Heroku App
-      https://goodmark.herokuapp.com/
+      <h2>Links</h2>
+      <h3>Github</h3>
+      <a href="https://github.com/gyhwa/goodmark">https://github.com/gyhwa/goodmark </a>
+      <h3>Heroku App</h3>
+      <a href="https://goodmark.herokuapp.com/">https://goodmark.herokuapp.com/</a>
      </Col>
     </Row>
   </div>

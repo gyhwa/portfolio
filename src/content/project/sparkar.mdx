@@ -1,0 +1,55 @@
+---
+title: "Spark AR"
+date: "2021-01-05"
+featuredImage: ./images/sparkar/vintage-pink.png
+summary: "Creating Instagram and Facebook filters using SparkAR"
+tag: ["art","all"]
+---
+import React from "react"
+import { Container, Row, Col } from 'react-bootstrap';
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col>
+      <h2>Introduction</h2>
+      <p>With <a href="https://sparkar.facebook.com/ar-studio/">Spark AR</a>, Facebook has made it easier for creators to make augmented filters for its social media platforms. Combined with a bit of knowledge of visual programming and a graphics editor (Adobe Photoshop is my choice), one can make various experiences.</p>
+      <p>Over the course of the Stay At Home order during the COVID-19 pandemic, I decided that I wanted to learn how to use Spark AR and create some of these experiences.</p>
+      </Col>
+    </Row>
+  </div>
+</Container>
+
+
+
+<Container fluid className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+    <h2>Tools & Methods</h2>
+    <h3>Tools</h3>
+    <ul>
+    <li>Spark AR</li>
+    <li>Adobe Photoshop</li>
+    <li>Adobe After Effects</li>
+    </ul>
+    <h3>Method</h3>
+    <p> Spark AR was the main tool used to create all the filters. Within Spark AR, slightly more complex filters need to utilize their Pathch Editor which is a visual programming tool. While there are many patches pre-built into Spark AR, there are community-built patches that I utilized and need to thank. These patches are <a href="https://github.com/positlabs/spark-lut-patch">FastLUT</a> by Josh Beckwith and the Kira Kira Sparkle patch, which currently I am sourcing to Emory Tan.</p>
+    <p> I used Photoshop to mainly create various textures and LUTs. "A LUT is a Color Look-Up Table, it maps one color into another. It is a technique used in the movie industry, to create certain styles to movies." <a href="https://digital-photography-school.com/create-your-own-style-using-luts-photoshop/">(Source)</a>. A LUT was used to force a pink photo style on anything shot using this <a href="https://www.facebook.com/sparkarhub/portfolios/108962437666533/effects/1096364507495339/">filter</a>. In addition, there is a light leak created using Photoshop and overlayed on top to add to the retro vibe of the filter. </p>
+    <p> if the texture needed to be animated, I utilized After Effects to create a smooth PNG animation sequence, such as the case in the glow from this <a href="https://www.facebook.com/sparkarhub/portfolios/108962437666533/effects/194912218925700/">Red Neon Filter</a>.</p>
+    </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+        <h2>Portfolio</h2>
+        <p> Link to my Spark AR <a href="https://www.facebook.com/sparkarhub/dashboard/">filters</a></p>
+        <img width="50%" src={'../../images/sparkar/sparkarportfolio.png'} alt="original" />
+      </Col>
+    </Row>
+  </div>
+</Container>

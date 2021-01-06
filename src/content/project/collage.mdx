@@ -13,31 +13,29 @@ import { Container, Row, Col } from 'react-bootstrap';
   <div className="pad">
     <Row>
       <Col>
-      ## Introduction
-      ### Collage Challenge
-
-      The collage challenge is to go on Unsplash or Pexels and select four random images and create a collage using those four images. Since these images are random, there is a purposeful limitation applied to the collage, which is theorized to drive creativity <a href="https://blog.ted.com/can-limitations-make-you-more-creative-a-qa-with-artist-phil-hansen/">(Source)</a>. Also, it may be cliché, but practice makes perfect. Perhaps as I continue to practice myself, my collages will become better in the future.
+      <h2>Introduction</h2>
+      <h3>Collage Challenge</h3>
+      <p>The collage challenge is to go on Unsplash or Pexels and select four random images and create a collage using those four images. Since these images are random, there is a purposeful limitation applied to the collage, which is theorized to drive creativity <a href="https://blog.ted.com/can-limitations-make-you-more-creative-a-qa-with-artist-phil-hansen/">(Source)</a>. Also, it may be cliché, but practice makes perfect. Perhaps as I continue to practice myself, my collages will become better in the future.</p>
       </Col>
     </Row>
-
     <Row xs={1} md={2}>
       <Col className="mb-4">
         <img width="100%" src={'../../images/collage/list-example.png'} alt="original" />
-        Four Original Images
+        <p>Four Original Images</p>
       </Col>
       <Col className="mb-4">
         <img width="100%" src={'../../images/collage/final-example.png'} alt="original" />
-        Collage
+        <p>Collage</p>
       </Col>
     </Row>
     <Row>
       <Col>
-      (Fig 1: An example of a collage challenge. Original images from <a href="https://www.pexels.com/@jack-redgate-333633">Jack Redgate</a>, <a href="https://www.pexels.com/@nadi-lindsay-1130679">Nadi Lindsay</a>, <a href="https://www.pexels.com/@rethaferguson">rf._.studio</a>, and <a href="https://www.pexels.com/@readymade">ready made</a>)
+      <p>(Fig 1: An example of a collage challenge. Original images from <a href="https://www.pexels.com/@jack-redgate-333633">Jack Redgate</a>, <a href="https://www.pexels.com/@nadi-lindsay-1130679">Nadi Lindsay</a>, <a href="https://www.pexels.com/@rethaferguson">rf._.studio</a>, and <a href="https://www.pexels.com/@readymade">ready made</a>)</p>
+      <h3>Tool for Collage Challenge</h3>
+      <p>I can still go onto Pexel or Unsplash and randomly pick; however, I am likely still going to be biased. I wanted to make a site that randomly selects four images for me, so that's where this project came from.</p>
+    </Col>
+  </Row>
 
-      ### Tool for Collage Challenge
-      I can still go onto Pexel or Unsplash and randomly pick; however, I am likely still going to be biased. I wanted to make a site that randomly selects four images for me, so that's where this project came from. 
-      </Col>
-    </Row>
   </div>
 </Container>
 
@@ -45,19 +43,18 @@ import { Container, Row, Col } from 'react-bootstrap';
   <div className="pad">
     <Row>
       <Col>
-      ## Process
-      ### Inspiration
-      One of the sites I enjoy personally is <a href="https://coolors.co/">Coolors</a>, a super fast color schemes generator. One of the aspects of the site I enjoyed was the capability to lock a particular color.
-
+      <h2>Process</h2>
+      <h3>Inspiration</h3>
+      <p>One of the sites I enjoy personally is <a href="https://coolors.co/">Coolors</a>, a super fast color schemes generator. One of the aspects of the site I enjoyed was the capability to lock a particular color.</p>
       <img width="80%" src={'../../images/collage/coolors-inspo.png'} alt="original" />
-      (Fig 2: Coolors toggle lock.)
-
-      ### Tools
-
-      * <Link to="https://www.gatsbyjs.org/">Gatsby</Link> - Static Site Generator
-      * <Link to="https://es.reactjs.org/">React</Link> - Front-End JavaScript library
-      * <Link to="https://react-bootstrap.github.io/">Bootstrap React</Link> - Front-End UI library
-      * <Link to="https://www.pexels.com/api/">Pexels API</Link> - Stock Image Library
+      <p>(Fig 2: Coolors toggle lock.)</p>
+      <h3>Tools</h3>
+      <ul>
+      <li><Link to="https://www.gatsbyjs.org/">Gatsby</Link> - Static Site Generator</li>
+      <li><Link to="https://es.reactjs.org/">React</Link> - Front-End JavaScript library</li>
+      <li><Link to="https://react-bootstrap.github.io/">Bootstrap React</Link> - Front-End UI library</li>
+      <li><Link to="https://www.pexels.com/api/">Pexels API</Link> - Stock Image Library</li>
+      </ul>
       </Col>
     </Row>
   </div>
@@ -67,18 +64,16 @@ import { Container, Row, Col } from 'react-bootstrap';
   <div className="pad">
     <Row>
       <Col>
-      ## Results
-      ### To Do
-      * Currently I am limiting the image pool to 80 images, which is causing some repeats. I need to find out what the maximum number I can put based on Pexels' curated images.
-      * Request an increase in API requests I can send as currently I am limited to 200 requests per hour
-
-
-      ### Final
-
-      <a href="https://github.com/gyhwa/collage-challenge">Github</a> | <a href="https://collagechallenge.netlify.app/"> Site </a>
-
+      <h2>Results</h2>
+      <h3>To Do</h3>
+      <ul>
+      <li>Currently I am limiting the image pool to 80 images, which is causing some repeats. I need to find out what the maximum number I can put based on Pexels' curated images.</li>
+      <li>Request an increase in API requests I can send as currently I am limited to 200 requests per hour</li>
+      </ul>
+      <h3>Final</h3>
+      <p><a href="https://github.com/gyhwa/collage-challenge">Github</a> | <a href="https://collagechallenge.netlify.app/"> Site </a></p>
       <img width="80%" src={'../../images/collage/site.png'} alt="original" />
-      (Fig 3: Site screenshot.)
+      <p>(Fig 3: Site screenshot.)</p>
       </Col>
     </Row>
   </div>
