@@ -1,0 +1,109 @@
+---
+title: "Tier List Club"
+date: "2021-03-05"
+featuredImage: ./images/tierlistclub/tiers.png
+summary: "Making a webpage for a club."
+tag: ["code","all"]
+---
+import React from "react"
+import { Container, Row, Col } from 'react-bootstrap';
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col>
+      <h2>Project Summary</h2>
+      <h3>The History</h3>
+      <p>Tiering based of a tier list is an easy way to sort a category of items in a easy to understand way. Originally, it was a way to organize in gaming power levels of characters in games, but now it has gone beyond gaming and can be used to show the tierer's opinions of a category.</p>
+      <p>I had fun tiering ridiculous categories - fast food joints, cereal to name a few examples - with close friends. This was done by using Google Sheets with each tiering session occurring in each tab. At first it was fine, but the tabs quickly grew out of hand and it was hard to see which tab was the current category and topic on hand. </p>
+      <h3>The Goal</h3>
+      <p>I want to create a similar experience, but one that helped focus everyone involved on one current topic at a time. Other than that I did not want to change much. I wanted club members to be able to submit their tiers and view their submission along with others still. I wanted to make sure that the club was kept relatively small, so I needed a way to gate membership. I also want to keep it relatively low effort, so I knew I wanted to only make changes to the theme monthly along with pushing everyone's list monthly. </p>
+      </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid  className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      <h2>Features</h2>
+      <h3>MVP Features</h3>
+      <ul>
+      <li>Account-based by username</li>
+        <ul><li>Account registered only if they had the access code</li></ul>
+      <li>Viewable category (theme)</li>
+      <li>Submit and edit that month's tiers</li>
+      <li>View other's submissions</li>
+      <li>Easy way for me (as an admin) to pull final submissions to the archive and reset everyone's submissions to null</li>
+      </ul>
+      <h3>MAP Features</h3>
+      <ul>
+      <li>User account settings</li>
+      </ul>
+      <h3>Nice to Have Features</h3>
+      <ul>
+      <li>A way to make sure each member only had one account</li>
+      </ul>
+     </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      <h2>Technology Used</h2>
+      <h3>Coding Tools</h3>
+      <ul>
+        <li><Link to="https://nodejs.org/en/">Node.js</Link> - Back-End JavaScript runtime</li>
+        <li><Link to="https://mongoosejs.com/">Mongoose</Link> - MongoDB Object modeling</li>
+        <li><Link to="https://ejs.co/">EJS</Link> - Embedded Javascript templating</li>
+        <li><Link to="https://react-bootstrap.github.io/">Bootstrap React</Link> - Front-End UI library</li>
+      </ul>
+      <p>Notable Packages:</p>
+      <ul>
+        <li>Passport for user authentication</li>
+      </ul>
+      <h3>Graphics Tool</h3>
+      <ul>
+        <li><Link to="https://colorhunt.co/">Colorhunt</Link> - Color Palette</li>
+        <li>Adobe Illustrator</li>
+      </ul>
+     </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      <h2>Process</h2>
+      <h3>Steps</h3>
+      <ol>
+        <li>Made all the EJS pages with HTML and added CSS</li>
+          <ul>
+            <li>Focused first on creating a nav bar so I could understand how a user would get to each page</li>
+            <li>Then made all the pages one by one, starting first with the easiest (pages that did not need any forms, then pages that needed forms). I also made these pages so that they didn't need any backend by adding mock data. If there were any graphics needed, these were just filled with a placeholder image.</li>
+          </ul>
+        <li>Created backend to allow for user account creation and tierlist submission</li>
+          <ul>
+            <li>Account creation using Passport and other npm packages to make my life easir (ex.password encryption) </li>
+            <li>Post request for submissions</li>
+            <li>Send information from MongoDB to the frontend when asked by a get request</li>
+          </ul>
+        <li>Fixed up any frontend to use any information received from the backend instead of the mock data</li>
+        <li>Wrote copy and created graphics, which were then added to the site.</li>
+      </ol>
+      <p><img width="100%" src={'../../images/tierlistclub/about.png'} alt="original" /></p>
+      <h3>End Result</h3>
+      <p>Heroku App</p>
+      <p><a href="https://tierlistclub.herokuapp.com/">https://tierlistclub.herokuapp.com/</a></p>
+      <p>Discord</p>
+      <p><a href="https://discord.gg/NKNwJqdVzH">Discord</a></p>
+     </Col>
+    </Row>
+  </div>
+</Container>
