@@ -26,14 +26,6 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-transformer-remark",
     {
-    resolve: "gatsby-plugin-google-tagmanager",
-    options: {
-      id: "GTM-KBXXW52",
-      includeInDevelopment: false,
-      defaultDataLayer: { platform: "gatsby" },
-      }
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `

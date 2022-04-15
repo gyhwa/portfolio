@@ -1,0 +1,46 @@
+---
+title: "Gradient Steps"
+date: "2021-03-29"
+featuredImage: ./images/gradientsteps/gradientsteps.png
+summary: "A tool to find a smooth gradient between two to four colors"
+tag: ["code","all"]
+---
+import React from "react"
+import {Link} from "gatsby"
+import { Container, Row, Col } from 'react-bootstrap';
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      <h2>Motivation</h2>
+      <p>While working on projects, I always want to have a style guide in place, which means including a small subset of colors I am allowed to work within. Sometimes, I find two colors I really like, but I want to find a color in between that works. In these cases, I usually go to <Link to="https://color.adobe.com/create/color-wheel">Adobe Color</Link> or to <Link to="https://coolors.co/">Coolors</Link>. Occasionally, I do not find the color I want so I wanted a tool that finds a gradient step between known colors.</p>
+     </Col>
+      </Row>
+  </div>
+</Container>
+
+<Container fluid className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      <h2>Process</h2>
+      <h3>Lessons</h3>
+      In working on this project, I was able to practice more with EJS and Javascript.
+      <br />
+      <br />
+      <h3>Tools</h3>
+      <ul>
+      <li><Link to="https://ejs.co/">EJS</Link> - Static Site Generator</li>
+      <li><Link to="https://react-bootstrap.github.io/">Bootstrap React</Link> - Front-End UI library</li>
+      </ul>
+      <h3>Final</h3>
+      <ul>
+      <li>Gradient Steps <Link to="https://gradientsteps.herokuapp.com/">link</Link></li>
+      </ul>
+            <img width="80%" src={'../../images/gradientsteps/gradientsteps.png'} alt="original" />
+            <p>(Fig 3: Site screenshot.)</p>
+     </Col>
+      </Row>
+  </div>
+</Container>
