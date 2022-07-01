@@ -1,0 +1,55 @@
+---
+title: "Lettgories"
+date: "2021-11-09"
+featuredImage: ./images/lettgories/lettgories.png
+summary: "Animating great works of art."
+tag: ["code","all"]
+---
+import React from "react"
+import { Container, Row, Col } from 'react-bootstrap';
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col>
+      <h2>Project Summary</h2>
+      <h3>The History</h3>
+      <p>Category is a popular and casual party game, where players list words in a specific category starting with the same letter. There is another version where you use all the letters, but cannot repeat a letter. For example if the category is grocery produce if someone picks "C" and says "corn," then another player cannot choose "C" again and say "carrot." The other player has to choose a different letter. This version was made into a board game by USAopoly called <Link to="https://theop.games/products/tapple-fast-word-fun-for-the-whole-family">Tapple</Link>. Unfortunately, my husband and I could not find this game anywhere available as it is out of stock in Target, Amazon, Lowe's, and more. </p>
+      <p>So, I made a digital app version for my Android phone, which is only used for personal use.</p>
+      <h3>The Requirements</h3>
+      <p>There needs to be four screens. The first screen needs to provide the players a time window, letter choices, and a distinct start button. During this screen, the players can verbalize a category. Clicking "Start" leads to the second screen. The second screen shows any active letters. Click any active letter should A) disable that letter from play B) lead to a timer where a player must name an item of the category of that letter in a specified time. If a player can think of an item, then they "slap" aka click the hand. Success leads to the second screen again, which is the list of active letters. If they fail, the timer runs out and lands on the game end screen. This game end screen can also be reached if all the letters are chosen and successfully used.</p>
+      </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid  className="light-grey">
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      <h2>Technology Used</h2>
+      <h3>Coding Tools</h3>
+      <ul>
+        <li><Link to="https://developer.android.com/kotlin">Kotlin with Android Studio</Link></li>
+      </ul>
+      <h3>Graphic Tool</h3>
+      <ul>
+        <li>Adobe Illustrator</li>
+      </ul>
+     </Col>
+    </Row>
+  </div>
+</Container>
+
+<Container fluid>
+  <div className="pad">
+    <Row>
+      <Col className="mt-4">
+      <h2>Final Result</h2>
+      <video width="100%" height="100%" autoplay loop>
+        <source src={'../../videos/lettgories_vid.mp4'} type="video/mp4" />
+      </video>
+     </Col>
+    </Row>
+  </div>
+</Container>
